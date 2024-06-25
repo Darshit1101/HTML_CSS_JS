@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0px 0px 10px 10px;
+}
+
+.container .col {
+    float: left;
+    width: 25%;
+
+}
+
+.container .col .box {
+    background: #ccc;
+    display: block;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    font-size: xx-large;
+    padding: 2px;
+    border-radius: 5px 15px;
+    bottom: 0;
+    left: 45%;
+}
+
+@media (max-width:768px) {
+    .container .col {
+        width: 33.33%;
+
+    }
+}
+
+@media (max-width:425px) {
+    .container .col {
+        width: 50%;
+
+    }
+}
+
+@media (max-width:375px) {
+    .container .col {
+        width: 100%;
+
+    }
+}

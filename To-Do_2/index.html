@@ -1,0 +1,77 @@
+<!-- in this code data stored in local storage  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TO DO LIST</h1>
+    <form>
+        <div>
+            <input type="text" value="" class="todovalue">
+            <button class="btn">Add Todo</button>
+        </div>
+        <ol class="todolist"></ol>
+    </form>
+    <script>
+        const todolist = document.querySelector('.todolist');
+        const todovalue = document.querySelector('.todovalue');
+
+        // Retrieve todo list items from local storage on page load
+        window.onload = function() {
+            const storedTodos = localStorage.getItem('todos');
+            if (storedTodos) {
+                const todosArray = JSON.parse(storedTodos);
+                todosArray.forEach(todo => {
+                    addTodoToList(todo);
+                });
+            }
+        };
+
+        document.querySelector('.btn').addEventListener('click', function(e){
+            e.preventDefault();
+            const newTodo = todovalue.value.trim();
+            if (!newTodo) return; // Don't add empty todos
+            
+            // Check if the todo already exists
+            const existingTodos = Array.from(todolist.querySelectorAll('li')).map(li => li.innerText);
+            if (existingTodos.includes(newTodo)) {
+                alert("Todo already exists!");
+                return;
+            }
+
+            // Add the new todo to the list
+            addTodoToList(newTodo);
+
+            // Clear the input field value
+            todovalue.value = '';
+
+            // Store updated todo list items in local storage
+            updateLocalStorage();
+        });
+
+        // Add event listener to todo items to handle deletion
+        todolist.addEventListener('click', function(e) {
+            if (e.target.tagName === 'LI') {
+                e.target.remove(); // Remove the clicked todo item from the list
+                updateLocalStorage(); // Update local storage after deletion
+            }
+        });
+
+        // Function to add todo item to the list
+        function addTodoToList(todo) {
+            const listItem = document.createElement('li');
+            listItem.textContent = todo;
+            todolist.appendChild(listItem);
+        }
+
+        // Function to update local storage with current todo list items
+        function updateLocalStorage() {
+            const todosArray = Array.from(todolist.querySelectorAll('li')).map(li => li.innerText);
+            localStorage.setItem('todos', JSON.stringify(todosArray));
+        }
+    </script>
+</body>
+</html>

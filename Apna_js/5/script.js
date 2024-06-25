@@ -1,0 +1,1 @@
+document.body.childNodes[1].innerText = "abcd";

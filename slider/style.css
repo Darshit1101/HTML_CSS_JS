@@ -1,0 +1,36 @@
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Set the width of the buttons */
+  height: 50px; /* Set the height of the buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Set the background color */
+  border-radius: 50%; /* Make the buttons circular */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  position: absolute; /* Position the buttons absolutely */
+  top: 50%; /* Position the buttons at 50% from the top */
+  transform: translateY(-50%); /* Move the buttons up by half of their height */
+  z-index: 1000; /* Ensure the buttons appear above the carousel */
+  transition: background-color 0.3s; /* Add a transition effect for background color change */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Change background color on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: white; /* Set the color of the control icons */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

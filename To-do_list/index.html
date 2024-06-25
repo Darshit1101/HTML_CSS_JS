@@ -1,0 +1,35 @@
+<!-- this code is simple to-do list .here,not store the data in local storage. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DO</title>
+  </head>
+  <body>
+    <h1>Simple TO-DO List</h1>
+    <input type="text" id="input" />
+    <button class="btn">click me!</button>
+    <div class="listitem">
+    </div>
+    <script>
+      let input = document.getElementById("input");
+      let btn = document.querySelector(".btn");
+      let listitem = document.querySelector(".listitem");
+      btn.addEventListener("click", function () {
+        // console.log(input.value);
+        let p = document.createElement("p");
+        p.innerText = input.value;
+        console.log(p);
+        listitem.appendChild(p);
+        input.value = "";
+      });
+
+      listitem.addEventListener("click", function (e) {
+        console.log(e.target);
+        e.target.remove();
+      });
+    </script>
+  </body>
+</html>

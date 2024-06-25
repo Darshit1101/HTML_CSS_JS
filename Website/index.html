@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wisernotify</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/font/stylesheet.css" />
+  <link rel="stylesheet" href="./css/nice-select.css" />
+</head>
+
+<body>
+  <!-- header -->
+
+  <!-- navbar -->
+  <div class="headComp">
+    <header class="container-fluid py-3">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/wiser-logo.png" alt="" class="mx-auto" role="img" aria-label="Bootstrap" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#collectreview">Collect review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#displayreview">Display review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#socialspotlight">Social Spotlight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#howitworks">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#pricing">Pricing</a>
+              </li>
+            </ul>
+            <div class="nav-right-btngroup">
+              <a href="#" class="btn me-2">Login</a>
+              <a href="#" class="btn btnAll">Get started</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+      >
+        <img
+          src="./img/wiser-logo.png"
+          class="mx-auto"
+          role="img"
+          aria-label="Bootstrap"
+        />
+
+        <ul class="nav col-md-auto mx-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link link-dark">Collect review</a></li>
+          <li><a href="#" class="nav-link link-dark">Display review</a></li>
+          <li><a href="#" class="nav-link link-dark">Social Spotlight</a></li>
+          <li><a href="#" class="nav-link link-dark">How it works</a></li>
+          <li><a href="#" class="nav-link link-dark">Pricing</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end mx-auto">
+          <button type="button" class="btn me-2">Login</button>
+          <button type="button" class="btn btnAll">Sign-up</button>
+        </div>
+      </header> -->
+
+    <!-- navbar content -->
+    <div class="navContent section-container hero-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="textHead">
+              <h1 class="mb-1">Boost your ecommerce</h1>
+              <h1 class="mb-4">
+                revenue with <span style="color: #645cfc">review</span>
+              </h1>
+            </div>
+            <div class="mb-4 text-center">
+              <div class="paraGroup">
+                <p class="hero-description font-secondary mx-auto">
+                  Build unwavering trust and skyrocket conversions by
+                  showcasing verified customer reviews with our smart, automated system.
+                </p>
+              </div>
+            </div>
+            <div class="d-block d-md-flex justify-content-center align-items-center pt-2">
+              <a href="" class="btnAll btn btn-lg mb-3 mb-md-0 d-block">Turn Reviews Into Revenue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- img -->
+    <div class="navImg container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <img src="./img/head1.png" class="img-fluid" alt="Centered image" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collect review  -->
+  <section class="sec-default sec-collectreview sec-spacing-pdtop" is="collectreview">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="text-center Collect_heading All_h3 sec-title sec-title-collectreview">
+            <h2 class="sec-title-text">Collect review</h2>
+            <p class="sec-title-subtext">Build unwavering trust and skyrocket conversions by showcasing verified</p>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-12">
+            <div class="accordion me-lg-4" id="accordionExample">
+              <div class="accordion-item Allreview_space item-automatereviews">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button space shadow-none" type="button" onclick="displayTabData('1')"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <h5>Automate reviews</h5>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      Our automation makes it simple: customers review with click
+                      & a quick scan via QR, SMS, or email, freeing you to focus
+                      on your business.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">Build
+                        a
+                        dedicated page</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane tab-pan-new text-center Mobile_view" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+
+                    <img id="imageContainer" src="./img/collect_1.png" class="img-fluid rounded-start" alt="..." />
+                  <p class="imgText" id="c1para">Set up once, collect forever</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item Allreview_space Photo_Incen shadow-none item-walloflove">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button space collapsed shadow-none" onclick="displayTabData('2')"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    <h5>Photo & Video Requests</h5>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      Enhance the review experience with automated reminders for customers to
+                      share their stories
+                      through photos and videos.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">Build
+                        a
+                        dedicated page</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane tab-pan-new text-center Mobile_view" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    
+                    <img id="imageContainer" src="./img/collect_2.png" class="img-fluid rounded-start" alt="..." />
+                  <p class="imgText" id="c2para">Capture More Than Wordsr</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item Allreview_space item-reviewnudges">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button space collapsed shadow-none" onclick="displayTabData('3')"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    <h5>Incentives</h5>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      Encourage customers to share their reviews using beautifully designed,
+                      mobile-first forms,
+                      incentivizing each valuable review.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">Build
+                        a
+                        dedicated page</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane tab-pan-new text-center Mobile_view" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    
+                    
+                    <img id="imageContainer" src="./img/collect_3.png" class="img-fluid rounded-start"
+                      alt="..." /><br>
+                    <p class="imgText" id="c3para">Inspire Action with Incentives</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 text-end Collect_right">
+            <div class="tab-content">
+              <div class="tab-pane tab-pan-new active text-center Desktop_view" id="faq-tab-1" role="tabpanel"
+                aria-labelledby="home-tab" tabindex="0">
+                <img id="imageContainer" src="./img/Collectreview1.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="tab-pane tab-pan-new text-center Desktop_view" id="faq-tab-2" role="tabpanel"
+                aria-labelledby="profile-tab" tabindex="0">
+                <img id="imageContainer" src="./img/Collectreview2.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="tab-pane tab-pan-new text-center Desktop_view" id="faq-tab-3" role="tabpanel"
+                aria-labelledby="messages-tab" tabindex="0">
+                <img id="imageContainer" src="./img/Collectreview3.png" class="img-fluid rounded-start" alt="..." /><br>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Display review -->
+  <section class="sec-default sec-displayreview sec-spacing-pd-v" id="displayreview">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="text-center Collect_heading All_h3 sec-title sec-title-collectreview">
+            <h2 class="sec-title-text">Display review</h2>
+            <p class="sec-title-subtext"> Build unwavering trust and skyrocket conversions by showcasing verified</p>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="row g-0">
+          <div class="col-lg-6 col-md-12">
+            <div class="accordion me-lg-4" id="accordionExample1">
+              <div class="accordion-item Allreview_space item-walloflove">
+                <h2 class="accordion-header" id="headingOned">
+                  <button class="accordion-button space shadow-none" type="button" onclick="displayTabDatatwo('11')"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOned" aria-expanded="true"
+                    aria-controls="collapseOned">
+                    <h5>Wall of Love</h5>
+                  </button>
+                </h2>
+                <div id="collapseOned" class="accordion-collapse collapse show" aria-labelledby="headingOned"
+                  data-bs-parent="#accordionExample1">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      Create a dedicated space for your happiest customers to share their experiences. This is a simple,
+                      powerful testament to your store's quality.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">Build a dedicated
+                        page</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane tab-pan-newtwo active imgText text-center Mobile_view" role="tabpanel"
+                    text-center aria-labelledby="home-tab" tabindex="0">
+<<<<<<< HEAD
+                    <img src="./img/Displayreview1.png" class="img-fluid rounded-start img_star" alt="..." />
+=======
+                    <!-- <div class="secImg1">
+                  <p class="imgText">Your Customers’ Best Moments</p>
+                  <img src="./img/star.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+                    <!-- <img src="./img/Displayreview1.svg" class="img-fluid rounded-start img_star" alt="..." /> -->
+
+                    <img src="./img/dis1_mobile (1).png" class="img-fluid rounded-start img_star" alt="..." />
+                  <p class="imgText" id="d1para">Your Customers’ Best Moments</p>
+
+>>>>>>> 664f882d75fcf30e2b892552369ac7b03f8e62cc
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item Allreview_space Photo_Incen shadow-none item-productsection">
+                <h2 class="accordion-header" id="headingTwod">
+                  <button class="accordion-button space collapsed shadow-none" onclick="displayTabDatatwo('12')"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwod" aria-expanded="false"
+                    aria-controls="collapseTwod">
+                    <h5>Product Review Section </h5>
+                  </button>
+                </h2>
+                <div id="collapseTwod" class="accordion-collapse collapse" aria-labelledby="headingTwod"
+                  data-bs-parent="#accordionExample1">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      Equip your product pages with authentic reviews. Let your customers do the talking, providing
+                      valuable insights and building trust with potential buyers.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">Build a Product page</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane tab-pan-newtwo active imgText text-center Mobile_view" role="tabpanel"
+                    text-center aria-labelledby="home-tab" tabindex="0">
+<<<<<<< HEAD
+                    <img src="./img/Displayreview2.svg" class="img-fluid rounded-start img_star" />
+=======
+                    <!-- <div class="secImg1">
+                  <p class="imgText">Your Customers’ Best Moments</p>
+                  <img src="./img/star.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+                    <img src="./img/dis2_mobile (1).png" class="img-fluid rounded-start img_star" />
+                <p class="imgText" id="d2para">Showcase Product Love from Real Customers</p>
+
+>>>>>>> 664f882d75fcf30e2b892552369ac7b03f8e62cc
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item Allreview_space Photo_Incen shadow-none item-reviewnudges">
+                <h2 class="accordion-header" id="headingthreed">
+                  <button class="accordion-button space collapsed shadow-none" onclick="displayTabDatatwo('13')"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreed" aria-expanded="false"
+                    aria-controls="collapseThreed">
+                    <h5>Review nudges</h5>
+                  </button>
+                </h2>
+                <div id="collapseThreed" class="accordion-collapse collapse" aria-labelledby="headingthreed"
+                  data-bs-parent="#accordionExample1">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      Strategically place key review snippets where they make the biggest impact, guiding shoppers to
+                      make informed decisions.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">For your buy now
+                        button</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane tab-pan-newtwo active imgText text-center Mobile_view" role="tabpanel"
+                    text-center aria-labelledby="home-tab" tabindex="0">
+                    <!-- <div class="secImg1">
+                  <p class="imgText">Your Customers’ Best Moments</p>
+                  <img src="./img/star.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+                    <img src="./img/dis3_mobile.png" class="img-fluid rounded-start img_star" />
+                <p class="imgText" id="d3para">Highlight What Matters</p>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="accordion-item Allreview_space Photo_Incen shadow-none item-curatedcarousel">
+                <h2 class="accordion-header" id="headingFourd">
+                  <button class="accordion-button space collapsed shadow-none" onclick="displayTabDatatwo('14')"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourd" aria-expanded="false"
+                    aria-controls="collapseFourd">
+                    <h5>Curated Carousel</h5>
+                  </button>
+                </h2>
+                <div id="collapseFourd" class="accordion-collapse collapse" aria-labelledby="headingFourd"
+                  data-bs-parent="#accordionExample1">
+                  <div class="accordion-body accordion_inner Auto_review">
+                    <p class="card-text">
+                      A simple, rotating showcase of your top reviews, demonstrating the quality and satisfaction your
+                      products bring.
+                    </p>
+                    <h6 class="d-flex align-items-center">
+                      <img src="./img/bulb.png" /><span style="color: #645cfc" class="ms-2">Hand-pick reviews</span>
+                    </h6>
+                  </div>
+                  <div class="tab-pane active imgText text-center Mobile_view" role="tabpanel" text-center
+                    aria-labelledby="home-tab" tabindex="0">
+                    <!-- <div class="secImg1">
+                <p class="imgText">Your Customers’ Best Moments</p>
+                <img src="./img/star.png" class="img-fluid rounded-start img_star" alt="..." />
+              </div> -->
+                    <img src="./img/dis4_mobile (1).png" class="img-fluid rounded-start img_star" />
+              <p class="imgText" id="d4para">Customer Love, Front, and Center</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 text-end Collect_right">
+            <div class="tab-content">
+              <div class="tab-pane tab-pan-newtwo active imgText text-center Desktop_view" id="faq-tabtwo-11"
+                role="tabpanel" text-center aria-labelledby="home-tab" tabindex="0">
+                <!-- <div class="secImg1">
+                  <p class="imgText">Your Customers’ Best Moments</p>
+                  <img src="./img/star.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+<<<<<<< HEAD
+                <img src="./img/Displayreview1.png" class="img-fluid rounded-start img_star" alt="..." />
+=======
+                <img src="./img/dis1.png" class="img-fluid rounded-start img_star" alt="..." />
+
+
+>>>>>>> 664f882d75fcf30e2b892552369ac7b03f8e62cc
+              </div>
+
+              <div class="tab-pane tab-pan-newtwo imgText text-center Desktop_view" id="faq-tabtwo-12" role="tabpanel"
+                aria-labelledby="profile-tab" tabindex="1">
+                <!-- <div class="secImg2">
+                  <p class="imgText">Showcase Product Love from Real Customers</p>
+                  <img src="./img/star2.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+                <img src="./img/dis2.png" class="img-fluid rounded-start img_star" />
+              </div>
+
+              <div class="tab-pane tab-pan-newtwo imgText text-center Desktop_view" id="faq-tabtwo-13" role="tabpanel"
+                aria-labelledby="messages-tab" tabindex="2">
+                <!-- <div class="secImg2">
+                  <p class="imgText">Highlight What Matters</p>
+                  <img src="./img/star3.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+                <img src="./img/dis3.png" class="img-fluid rounded-start img_star" />
+              </div>
+
+              <div class="tab-pane tab-pan-newtwo imgText text-center Desktop_view" id="faq-tabtwo-14" role="tabpanel"
+                aria-labelledby="messages-tab" tabindex="3">
+                <!-- <div class="secImg2">
+                  <p class="imgText">Customer Love, Front, and Center</p>
+                  <img src="./img/star4.png" class="img-fluid rounded-start img_star" alt="..." />
+                </div> -->
+                <img src="./img/dis4.png" class="img-fluid rounded-start img_star" />
+              </div>
+            </div>
+          </div>
+  </section>
+
+
+  <!-- Maximize Every Review's Visibility -->
+  <div class="sec-default sec-maximize maximizeBody sec-spacing-pd-v80" id="socialspotlight">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <div class="text-center Collect_heading All_h3 sec-title sec-title-maximizeTitle">
+            <h2 class="sec-title-text">Maximize Every Review's Visibility</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row twoSection">
+        <div class="col-12 col-md-6 col-sm-12 col-xs-12">
+          <img class="maximizeImg img-fluid" src="./img/maxRev.png" alt="" srcset="" />
+        </div>
+        <div class="col-12 col-md-6 col-sm-12 col-xs-12">
+          <div class="Elevated">
+            <div class="img_title">
+              <img class="threeImg" src="./img/yellowstar.png" alt="" srcset="" />
+              <h2 class="rightTitle">Elevated Google Seller Ratings</h2>
+            </div>
+            <p class="rightPara">
+              Boost your Google Ads' performance and cut through the noise. Elevate click-through rates with seller ratings that spotlight your store’s trustworthiness, reducing acquisition costs.
+            </p>
+          </div>
+          <div class="Elevated">
+            <div class="img_title">
+              <img class="threeImg img-fluid" src="./img/rgb_google.png" alt="" srcset="" />
+              <h2 class="rightTitle">Enhanced Google Shopping feed</h2>
+            </div>
+            <p class="rightPara">
+              Integrated star ratings and customer reviews count in your Google Shopping feed, attracting shoppers with visual proof of product satisfaction.
+            </p>
+          </div>
+          <div class="Elevated">
+            <div class="img_title">
+              <img class="threeImg" src="./img/Vector.png" alt="" srcset="" />
+              <h2 class="rightTitle">Rich Snippets</h2>
+            </div>
+            <p class="rightPara">
+              Make a standout impression in organic search results with rich snippets that display product ratings, drawing attention and bringing quality traffic to your store.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works  -->
+  <section class="sec-default sec-howitworks  sec-spacing-pdtop" id="howitworks">
+    <div class="container text-center All_h3 Its_works">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="text-center  All_h3 sec-title sec-title-howitworks">
+            <h2 class="sec-title-text">How It Works</h2>
+            <p class="sec-title-subtext"> Built for Shopify: Effortless Integration, Instant Impact</p>
+          </div>
+        </div>
+      </div>
+      <div class="simple_steps">
+        <div class="step_line">
+          <img class="img-fluid" src="./img/Arrow 1.svg" alt="Steps" />
+        </div>
+        <div class="All_steps">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <img src="./img/Howwork1.svg" class="card-img-top mx-auto img-fluid" alt="..." style="width: 100px" />
+              <h5>Install with Ease</h5>
+              <p>
+                Launch in moments, not months. Our app is designed for swift
+                action—go live in just 5 minutes.
+              </p>
+            </div>
+            <div class="col-lg-4 col-12">
+              <img src="./img/Howwork2.svg" class="card-img-top mx-auto img-fluid" alt="..." style="width: 100px" />
+              <h5>Collect Reviews Automatically</h5>
+              <p>
+                With pre-set optimal settings, start collecting customer
+                reviews immediately.
+              </p>
+            </div>
+            <div class="col-lg-4 col-12">
+              <img src="./img/Howwork3.svg" class="card-img-top mx-auto img-fluid" alt="..." style="width: 100px" />
+              <h5 class="card-title">Showcase Reviews with Style</h5>
+              <p>
+                Show off customer reviews in attractive widgets that integrate
+                seamlessly with your site.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <a href="" class="btnAll btn  d-block btn-getstarted">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="step_line2">
+          <img class="img-fluid" src="./img/Arrow 2.svg" alt="Steps" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing [S]  -->
+  <section class="sec-defult sec-spacing-pdtop sec-pricing" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="sec-title sec-title-pricing">
+            <h2 class="sec-title-text">Powerful features for <span>powerful creators</span> </h2>
+            <p class="sec-title-subtext">Choose a plan that’s right for you</p>
+            <div class="pricing-toogle-monthyr">
+              <div class="form-check form-switch">
+                <label class="form-check-label toogle-text toogle-text-month ">Pay Monthly </label>
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label toogle-text toogle-text-yearly" for="flexSwitchCheckChecked">Pay
+                  Yearly</label>
+              </div>
+              <div class="toogle-arrow">
+                <svg width="191" height="88" viewBox="0 0 191 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M95.4479 62.177C83.1589 65.2407 68.4854 65.8229 57.6854 58.0855C50.7836 53.1409 47.1187 43.1424 49.698 35.0267C52.134 27.3621 57.8228 20.6278 66.3473 20.833C70.7906 20.94 74.6217 22.9843 75.4306 27.6636C76.6663 34.8125 69.5347 42.2104 63.8645 45.3201C46.1688 55.0248 21.1357 54.4848 4.27845 43.2203"
+                    stroke="#645CFC" stroke-width="3" stroke-linecap="round" />
+                  <path d="M11.7083 56.4241C9.64629 53.5428 5.14355 46.8211 3.62828 42.9848" stroke="#645CFC"
+                    stroke-width="3" stroke-linecap="round" />
+                  <path d="M3.6272 42.9851C7.13984 42.5216 15.1242 41.2158 18.9606 39.7006" stroke="#645CFC"
+                    stroke-width="3" stroke-linecap="round" />
+                  <path
+                    d="M109.889 69.738C108.647 69.738 107.569 69.4451 106.655 68.8591C105.746 68.2673 105.096 67.4324 104.703 66.3542L106.575 65.3875C106.874 66.1375 107.314 66.7146 107.894 67.1189C108.48 67.5232 109.156 67.7253 109.924 67.7253C110.651 67.7253 111.242 67.5496 111.699 67.198C112.156 66.8464 112.385 66.3806 112.385 65.8005C112.385 65.2908 112.168 64.8689 111.735 64.5349C111.307 64.2009 110.583 63.8728 109.564 63.5505C108.029 63.0642 106.924 62.5193 106.25 61.9158C105.53 61.283 105.169 60.4246 105.169 59.3406C105.169 58.2097 105.62 57.2546 106.523 56.4753C107.437 55.6843 108.547 55.2888 109.854 55.2888C111.002 55.2888 111.972 55.5613 112.763 56.1062C113.56 56.6453 114.131 57.3689 114.477 58.2771L112.64 59.2615C112.107 57.9431 111.157 57.2839 109.792 57.2839C109.107 57.2839 108.541 57.4656 108.096 57.8289C107.656 58.1863 107.437 58.6462 107.437 59.2087C107.437 59.7244 107.645 60.1462 108.061 60.4744C108.483 60.8025 109.145 61.1013 110.047 61.3708C111.787 61.8865 112.994 62.4812 113.668 63.155C114.336 63.8054 114.67 64.6462 114.67 65.6775C114.67 66.7732 114.24 67.7253 113.378 68.5339C112.523 69.3367 111.36 69.738 109.889 69.738ZM122.457 63.0671C122.457 62.657 122.287 62.3142 121.948 62.0388C121.608 61.7634 121.148 61.6257 120.568 61.6257C119.454 61.6257 118.657 62.1355 118.177 63.155L116.542 62.2146C117.298 60.5857 118.66 59.7712 120.629 59.7712C122.434 59.7712 123.632 60.4246 124.224 61.7312C124.441 62.2058 124.549 62.783 124.549 63.4626V69.5798H122.44V68.2615C121.848 69.2458 120.907 69.738 119.618 69.738C118.698 69.738 117.925 69.4744 117.298 68.947C116.683 68.4314 116.375 67.7546 116.375 66.9167V66.8113C116.375 66.4539 116.434 66.1257 116.551 65.8269C116.668 65.5222 116.829 65.2673 117.034 65.0623C117.24 64.8513 117.471 64.6667 117.729 64.5085C117.992 64.3503 118.277 64.2273 118.581 64.1394C118.892 64.0515 119.194 63.9871 119.487 63.946C119.78 63.8992 120.075 63.8757 120.374 63.8757H121.561C122.158 63.8757 122.457 63.6062 122.457 63.0671ZM122.44 65.6951V65.3875H120.374C119.923 65.3875 119.498 65.5076 119.1 65.7478C118.713 65.988 118.52 66.3103 118.52 66.7146C118.52 67.1072 118.66 67.4265 118.942 67.6726C119.223 67.9128 119.592 68.033 120.049 68.033C120.781 68.033 121.362 67.825 121.789 67.4089C122.223 66.9871 122.44 66.4158 122.44 65.6951ZM125.911 59.9646H128.232L131.062 67.075L133.883 59.9646H136.133L132.116 69.5798H129.981L125.911 59.9646ZM146.372 65.405H139.086C139.104 66.1199 139.391 66.7205 139.948 67.2068C140.504 67.6755 141.152 67.9099 141.89 67.9099C143.097 67.9099 143.961 67.4119 144.483 66.4158L146.03 67.4353C145.631 68.1736 145.069 68.7449 144.342 69.1492C143.615 69.5535 142.813 69.7556 141.934 69.7556C140.492 69.7556 139.291 69.2839 138.33 68.3406C137.369 67.3796 136.889 66.1843 136.889 64.7546C136.889 63.3953 137.352 62.2205 138.278 61.2302C139.192 60.2576 140.343 59.7712 141.732 59.7712C143.202 59.7712 144.348 60.2253 145.168 61.1335C146 62.0535 146.416 63.2546 146.416 64.7371C146.416 64.9187 146.402 65.1414 146.372 65.405ZM141.732 61.6082C141.07 61.6082 140.504 61.8074 140.035 62.2058C139.573 62.6042 139.291 63.1316 139.192 63.7878H144.237C144.201 63.1257 143.949 62.5984 143.481 62.2058C143.012 61.8074 142.429 61.6082 141.732 61.6082ZM152.78 69.5798V67.655L157.824 63.3484C158.75 62.5632 159.409 61.9099 159.802 61.3884C160.159 60.8904 160.338 60.3279 160.338 59.7009C160.338 59.0095 160.11 58.4412 159.653 57.9958C159.201 57.5447 158.592 57.3191 157.824 57.3191C156.465 57.3191 155.51 58.0574 154.959 59.5339L152.982 58.7078C153.269 57.6824 153.843 56.8533 154.704 56.2205C155.566 55.5994 156.612 55.2888 157.842 55.2888C159.237 55.2888 160.382 55.6843 161.279 56.4753C162.181 57.2546 162.632 58.2742 162.632 59.5339C162.632 60.5417 162.365 61.4353 161.832 62.2146C161.328 62.9353 160.447 63.8171 159.187 64.8601L155.917 67.5847H162.702V69.5798H152.78ZM169.277 69.738C168.181 69.738 167.214 69.4802 166.376 68.9646C165.538 68.449 164.908 67.699 164.487 66.7146L166.394 65.6599C166.991 67.0251 167.964 67.7078 169.312 67.7078C170.103 67.7078 170.768 67.4734 171.307 67.0046C171.858 66.5417 172.133 65.9119 172.133 65.115C172.133 64.3064 171.872 63.6677 171.351 63.199C170.829 62.7244 170.167 62.4871 169.365 62.4871C168.304 62.4871 167.416 62.8884 166.701 63.6912L164.812 62.9177L165.875 55.4822H173.741V57.4861H167.545L166.991 61.5115C167.747 60.8787 168.676 60.5623 169.778 60.5623C171.172 60.5623 172.294 60.9871 173.144 61.8367C173.993 62.6863 174.418 63.7673 174.418 65.0798C174.418 66.5037 173.92 67.6375 172.924 68.4812C171.94 69.3191 170.724 69.738 169.277 69.738ZM182.267 58.532C182.267 59.405 181.953 60.155 181.326 60.782C180.705 61.4031 179.955 61.7136 179.076 61.7136C178.198 61.7136 177.448 61.4031 176.826 60.782C176.217 60.155 175.912 59.405 175.912 58.532C175.912 57.6589 176.217 56.9089 176.826 56.282C177.453 55.655 178.203 55.3416 179.076 55.3416C179.949 55.3416 180.699 55.655 181.326 56.282C181.953 56.8914 182.267 57.6414 182.267 58.532ZM188.762 55.4822L179.604 69.5798H177.477L186.653 55.4822H188.762ZM179.076 57.1609C178.701 57.1609 178.379 57.2957 178.11 57.5652C177.846 57.8289 177.714 58.1511 177.714 58.532C177.714 58.9128 177.846 59.2351 178.11 59.4988C178.379 59.7625 178.701 59.8943 179.076 59.8943C179.463 59.8943 179.791 59.7595 180.061 59.49C180.33 59.2205 180.465 58.9011 180.465 58.532C180.465 58.1628 180.33 57.8435 180.061 57.574C179.791 57.2986 179.463 57.1609 179.076 57.1609ZM187.162 63.3132C188.041 63.3132 188.785 63.6267 189.395 64.2537C190.016 64.8748 190.326 65.6248 190.326 66.5037C190.326 67.3826 190.016 68.1326 189.395 68.7537C188.785 69.363 188.041 69.6677 187.162 69.6677C186.289 69.6677 185.539 69.363 184.912 68.7537C184.285 68.1267 183.972 67.3767 183.972 66.5037C183.972 65.6365 184.28 64.8865 184.895 64.2537C185.522 63.6267 186.278 63.3132 187.162 63.3132ZM188.129 67.4705C188.387 67.1951 188.516 66.8699 188.516 66.4949C188.516 66.1199 188.387 65.8035 188.129 65.5457C187.871 65.2703 187.549 65.1326 187.162 65.1326C186.776 65.1326 186.445 65.2703 186.169 65.5457C185.911 65.8035 185.782 66.1199 185.782 66.4949C185.782 66.8699 185.911 67.1951 186.169 67.4705C186.445 67.7283 186.776 67.8572 187.162 67.8572C187.549 67.8572 187.871 67.7283 188.129 67.4705Z"
+                    fill="#645CFC" />
+                </svg>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-plan">
+        <div class="col-sm-4 col-12">
+          <div class="plan-content clearfix">
+            <div class="pricing-tag">Essentials</div>
+            <div class="pricing-subtext">The core tools for businesses that are getting started</div>
+            <div class="pricing-dollar">$19<span>/ month</span></div>
+            <hr />
+            <div class="box select-pricing">
+              <select>
+                <option value="1">250 orders</option>
+                <option value="2">300 orders</option>
+                <option value="3">350 orders</option>
+                <option value="4">400 orders</option>
+                <option value="5">500 orders</option>
+              </select>
+            </div>
+            <div class="features-block">
+              <h5>Top features</h5>
+              <ul class="pricing-features-list">
+                <li>Branding</li>
+                <li>Analytics</li>
+                <li>Branding</li>
+                <li>Analytics</li>
+              </ul>
+            </div>
+            <a href="#" class="btnAll btn-pricing ">Get Started Now</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12">
+          <div class="plan-content plan-content-standard clearfix">
+            <div class="pricing-tag">Standard</div>
+            <div class="pricing-subtext">Everything you need for a growing business</div>
+            <div class="pricing-dollar">$50<span>/ month</span></div>
+            <hr />
+            <div class="box select-pricing">
+              <select>
+                <option value="1">250 orders</option>
+                <option value="2">300 orders</option>
+                <option value="3">350 orders</option>
+                <option value="4">400 orders</option>
+                <option value="5">500 orders</option>
+              </select>
+            </div>
+            <div class="features-block">
+              <h5>Top features</h5>
+              <ul class="pricing-features-list">
+                <li>Branding</li>
+                <li>Analytics</li>
+                <li>Branding</li>
+                <li>Analytics</li>
+              </ul>
+            </div>
+            <a href="#" class="btnAll btn-pricing ">Get Started Now</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12">
+          <div class="plan-content clearfix">
+            <div class="pricing-tag">Pro</div>
+            <div class="pricing-subtext">Advanced customization & support for scaling businesses</div>
+            <div class="pricing-dollar">$100<span>/ month</span></div>
+            <hr />
+            <div class="box select-pricing">
+              <select>
+                <option value="1">250 orders</option>
+                <option value="2">300 orders</option>
+                <option value="3">350 orders</option>
+                <option value="4">400 orders</option>
+                <option value="5">500 orders</option>
+              </select>
+            </div>
+            <div class="features-block">
+              <h5>Top features</h5>
+              <ul class="pricing-features-list">
+                <li>Branding</li>
+                <li>Analytics</li>
+                <li>Branding</li>
+                <li>Analytics</li>
+              </ul>
+            </div>
+            <a href="#" class="btnAll btn-pricing ">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing [E]  -->
+
+  <!-- Advanced Capabilities -->
+  <div class="sec-defult sec-advanced sec-spacing-pd-v advancedCapabilities">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="text-center  All_h3 sec-title sec-title-advanced advancedH1">
+            <h2 class="sec-title-text">Advanced Capabilities</h2>
+            <p class="sec-title-subtext"> Build unwavering trust and skyrocket conversions by showcasing
+              verified customer reviews with our smart, automated system.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4">
+          <img src="./img/advance1.png" alt="" srcset="" />
+          <h4 class="advanceTitle">Highly Customizable Layouts</h4>
+          <p class="advancePara">
+            Design with freedom. Tailor review displays with customizable
+            layouts to match your brand’s vibe and style.
+          </p>
+        </div>
+        <div class="col-xl-4">
+          <img src="./img/advance2.png" alt="" srcset="" />
+          <h4 class="advanceTitle">Seamless Integration</h4>
+          <p class="advancePara">
+            Connect effortlessly. Integrate review collection flow with your
+            SMS, WhatsApp, and email marketing channels.
+          </p>
+        </div>
+        <div class="col-xl-4">
+          <img src="./img/advance3.png" alt="" srcset="" />
+          <h4 class="advanceTitle">Product Review Grouping</h4>
+          <p class="advancePara">
+            Organize smartly. Group similar product reviews together
+          </p>
+        </div>
+      </div>
+      <div class="row secondRow">
+        <div class="col-xl-4">
+          <img src="./img/advance4.png" alt="" srcset="" />
+          <h4 class="advanceTitle">Analytics</h4>
+          <p class="advancePara">
+            Measure Your Success. Track the performance of your review
+            campaigns.
+          </p>
+        </div>
+        <div class="col-xl-4">
+          <img src="./img/advance5.png" alt="" srcset="" />
+          <h4 class="advanceTitle">Multi-Store sync</h4>
+          <p class="advancePara">
+            Expand your reputation. Share and sync reviews across your
+            portfolio of stores to amplify customer trust and loyalty.
+          </p>
+        </div>
+        <div class="col-xl-4">
+          <img src="./img/advance6.png" alt="" srcset="" />
+          <h4 class="advanceTitle">Custom CSS</h4>
+          <p class="advancePara">
+            Tailor Your Review Look. Ensure your review section perfectly
+            matches your site's style.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alexis L. -->
+  <div class="alexis">
+    <div class="container mx-auto">
+      <div class="row cont">
+        <div class="col col-lg-4">
+          <img src="./img/profile.png" class="img-fluid mx-auto d-block" alt="Responsive Image" />
+          <h4 class="text-center alexis4">Alexis L.</h4>
+          <p class="text-center alexisPara">CEO, CCNA Desde Cero</p>
+        </div>
+        <div class="col col-lg-8">
+          <img src="./img/fiveStar.png" class="img-fluid" alt="Responsive Image" />
+          <p class="alexisDesc">
+            “Our sale increased 250% after using Wisernotify. It not only
+            increases trust but time users spend on the website which
+            indirectly also improves SEO.”
+          </p>
+          <button class="btnAll">
+            250% Lift from wisernotify
+            <img src="./img/increase.png" alt="" srcset="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer  -->
+  <!-- Footer  -->
+  <section class="sec-footer">
+    <div class="container text-center">
+      <div class="Footer_top">
+        <img src="./img/wiser-logo.svg" />
+        <p>Built trust, Create Urgency & Make Conversions Easier.</p>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-light ft-menu-wrap">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 foot_nav">
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#collectreview">Collect review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#displayreview">Display review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#socialspotlight">Social Spotlight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#howitworks">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr />
+      <div class="d-flex justify-content-between align-items-center footer_last">
+        <div class="footer-btm-link">
+          <a href="https://wisernotify.com/termsconditions/">Terms</a>
+          <a href="https://wisernotify.com/privacypolicy/" class="ms-4">Privacy policy</a>
+        </div>
+        <div class="footer-btm-copyright">
+          <p class="copyright-text">All rights reserved © 2024 Wisernotify</p>
+        </div>
+        <div class="social-link-list">
+          <a class="social-link social-link-fb" href="https://www.facebook.com/WiserNotify" target="_blank">
+            <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.99652 4.85109H12.1875V1.03509C11.8095 0.983089 10.5095 0.866089 8.99552 0.866089C5.83652 0.866089 3.67252 2.85309 3.67252 6.50509V9.86609H0.186523V14.1321H3.67252V24.8661H7.94652V14.1331H11.2915L11.8225 9.86709H7.94552V6.92809C7.94652 5.69509 8.27852 4.85109 9.99652 4.85109Z"
+                fill="#303030" />
+            </svg>
+          </a>
+          <a class="social-link social-link-twitter" href="https://twitter.com/WiserNotify" target="_blank">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 2.42459C23.1075 2.81609 22.1565 3.07559 21.165 3.20159C22.185 2.59259 22.9635 1.63559 23.3295 0.482089C22.3785 1.04909 21.3285 1.44959 20.2095 1.67309C19.3065 0.711589 18.0195 0.116089 16.6155 0.116089C13.8915 0.116089 11.6985 2.32709 11.6985 5.03759C11.6985 5.42759 11.7315 5.80259 11.8125 6.15959C7.722 5.96009 4.1025 3.99959 1.671 1.01309C1.2465 1.74959 0.9975 2.59259 0.9975 3.50009C0.9975 5.20409 1.875 6.71459 3.183 7.58909C2.3925 7.57409 1.617 7.34459 0.96 6.98309C0.96 6.99809 0.96 7.01759 0.96 7.03709C0.96 9.42809 2.6655 11.4141 4.902 11.8716C4.5015 11.9811 4.065 12.0336 3.612 12.0336C3.297 12.0336 2.979 12.0156 2.6805 11.9496C3.318 13.8981 5.127 15.3306 7.278 15.3771C5.604 16.6866 3.4785 17.4756 1.1775 17.4756C0.774 17.4756 0.387 17.4576 0 17.4081C2.1795 18.8136 4.7625 19.6161 7.548 19.6161C16.602 19.6161 21.552 12.1161 21.552 5.61509C21.552 5.39759 21.5445 5.18759 21.534 4.97909C22.5105 4.28609 23.331 3.42059 24 2.42459Z"
+                fill="#303030" />
+            </svg>
+
+          </a>
+          <a class="social-link social-link-youtube" href="https://www.youtube.com/channel/UCfQUL0aSu0SD1srzpO0YNeA"
+            target="_blank">
+            <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.6725 2.77368C24.3917 1.72944 23.5683 0.906277 22.5243 0.625095C20.6168 0.103199 12.987 0.103199 12.987 0.103199C12.987 0.103199 5.35747 0.103199 3.45005 0.605308C2.42604 0.886192 1.58265 1.72959 1.30177 2.77368C0.799805 4.68095 0.799805 8.63638 0.799805 8.63638C0.799805 8.63638 0.799805 12.6118 1.30177 14.4991C1.58295 15.5432 2.40596 16.3663 3.4502 16.6475C5.37756 17.1696 12.9873 17.1696 12.9873 17.1696C12.9873 17.1696 20.6168 17.1696 22.5243 16.6675C23.5685 16.3864 24.3917 15.5633 24.6728 14.5192C25.1747 12.6118 25.1747 8.65647 25.1747 8.65647C25.1747 8.65647 25.1947 4.68095 24.6725 2.77368ZM10.5578 12.2906V4.98222L16.9024 8.63638L10.5578 12.2906Z"
+                fill="#303030" />
+            </svg>
+
+          </a>
+          <a class="social-link social-link-linkedin" href="https://www.linkedin.com/company/wisernotify/"
+            target="_blank">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_50_5477)">
+                <path
+                  d="M23.9943 24.8663V24.8653H24.0003V16.0633C24.0003 11.7573 23.0733 8.44031 18.0393 8.44031C15.6193 8.44031 13.9953 9.76831 13.3323 11.0273H13.2623V8.84231H8.48926V24.8653H13.4593V16.9313C13.4593 14.8423 13.8553 12.8223 16.4423 12.8223C18.9913 12.8223 19.0293 15.2063 19.0293 17.0653V24.8663H23.9943Z"
+                  fill="#303030" />
+                <path d="M0.395508 8.84314H5.37151V24.8661H0.395508V8.84314Z" fill="#303030" />
+                <path
+                  d="M2.882 0.866089C1.291 0.866089 0 2.15709 0 3.74809C0 5.33909 1.291 6.65709 2.882 6.65709C4.473 6.65709 5.764 5.33909 5.764 3.74809C5.763 2.15709 4.472 0.866089 2.882 0.866089V0.866089Z"
+                  fill="#303030" />
+              </g>
+              <defs>
+                <clipPath id="clip0_50_5477">
+                  <rect width="24" height="24" fill="white" transform="translate(0 0.866089)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <!-- <img src="./img/Frame 2147223795.svg" /> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('select:not(.ignore)').niceSelect();
+      FastClick.attach(document.body);
+    });    
+  </script>
+</body>
+
+</html>
