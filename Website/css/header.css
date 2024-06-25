@@ -5,7 +5,11 @@
   --black-color: #303030;
   --black-color-lgt: #495057;
 }
-
+:focus {
+  border: 0px !important;
+  outline: 0 !important;
+  box-shadow:none !important;
+}
 a {
   text-decoration: none;
 }
@@ -811,12 +815,66 @@ body {
 
 .plan-content .btn-pricing {
   width: 100%;
+  padding: 13px;
+  max-width: 210px;
+  margin: 15px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .plan-content-standard {
   background: rgba(100, 92, 252, 8%);
   border: 0px;
 }
+.row-pricing-features{
+  padding: 40px 0px 0px;
+}
+.pricing-features-list .accordion-button::after {
+  display: flex;
+}
+.pricing-features-list .accordion-button:hover {
+  color: var(--brand-color);
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  --bs-table-accent-bg: #F9F9FB;
+}
+.table>:not(caption)>*>* {
+  border-bottom-width: 0px;
+}
+.pricing-features-icon{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-features-false{
+  background: url("../img/false-2.svg") no-repeat;
+}
+.pricing-features-true{
+  background: url("../img/true-2.svg") no-repeat;
+}
+
+.pricing-features-list .accordion-item {
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+.pricing-features-list .accordion-button,
+.pricing-features-list .accordion-item .accordion-button:not(.collapsed), 
+.pricing-features-list .accordion-item .accordion-button {
+  color: #333333;
+  font-weight: 600;
+  background: #fafafa;
+  padding: 20px 26px;
+}
+.table-pricing-features tbody tr th{
+  font-weight: normal;
+  font-size: 14px;
+}
+.table-pricing-features>:not(caption)>*>* {
+  padding: 12px 20px;
+}
+
 
 
 /* media queries */
@@ -1154,8 +1212,8 @@ body {
     margin-bottom: 10px;
   }
 
-  .plan-content-standard {
-    margin: 25px 0px;
+  .row-plan .col-sm-3 + .col-sm-3 {
+    margin-top: 25px;
   }
 
   .sec-advanced .col-xl-4,
@@ -1168,3 +1226,4 @@ body {
   }
 
 }
+
